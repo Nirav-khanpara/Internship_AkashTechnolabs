@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Default Base{% endblock %}</title>
+</head>
+<body>
+    <ul>
+        <li><a href="/">Base</a></li>
+        <li><a href="/cor/home">Home</a></li>
+        <li><a href="/cor/about">About</a></li>
+        <li><a href="/cor/contact">Contact us</a></li>
+    </ul>
+    <h1>{% block b1 %}{% endblock b1 %}</h1>
+    {% block b2 %}This is Base Template{% endblock b2 %}
+</body>
+</html>
