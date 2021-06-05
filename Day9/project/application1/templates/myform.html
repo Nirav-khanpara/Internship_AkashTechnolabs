@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body>
+    <form action="formprocess/" method="post">
+        {% csrf_token %}
+        <p>First Name : <input type="text" name="fname" id=""></p>
+        <p>Middle Name : <input type="text" name="mname" id="" ></p>
+        <p>Last Name : <input type="text" name="lname" id=""></p>
+        <p>Email : <input type="email" name="email" id=""></p>
+        <p>Birth Date : <input type="date" name="birthdate" id=""></p>
+        <p>Mobile No. <input type="number" name="mobileno" id=""></p>
+        <p>Local Address : <input type="text" name="localaddress" id=""></p>
+        <p>Permanent Address : <input type="text" name="permanentaddress" id=""></p>
+        <p>Pin code : <input type="number" name="pincode" id=""></p>
+        <p>Password : <input type="password" name="password" id=""></p>
+        <p>Confirm Password : <input type="password" name="confirmpass" id=""></p>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>
